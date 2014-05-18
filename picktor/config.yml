@@ -1,0 +1,50 @@
+boards:
+    - name: "RaceLogger-RevB"
+      placements: "noname-Front.pos"
+      height: 1.5
+
+jobs:
+  - name: "RaceLogger RevB"
+    boards:
+      - name: "RaceLogger-RevB"
+        reference: "R201"
+        x: 50
+        y: 50
+        second_reference: "R307"
+
+    steps:
+      - name: "Test"
+        tapes:
+        - "R100K"
+
+tapeTemplates:
+  - name: "SMT805_generic"
+    package: "SM0805"
+    tapeWidth: 10
+    holeDiameter: 1
+    holeDistance: 2
+    holeToEdge: 1
+    totalHeight: 1.5
+    partToEdge: 1
+    partHeight: 1
+    partLength: 1
+    partWidth: 1
+    partDistance: 2
+    partRotation: 0
+      
+
+tapes:
+  - name: "C100nF"
+    type: "C"
+    value: "100nF"
+    template: "SMT805_generic"
+    numberOfParts: 10
+    origin_x: 5
+    origin_y: 5
+  - name: "R100K"
+    type: "R"
+    value: "100K"
+    template: "SMT805_generic"
+    numberOfParts: 10
+    origin_x: 5
+    origin_y: 15
