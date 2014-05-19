@@ -298,6 +298,7 @@ module mount_bottom(){
 	}
 }
 
+//This is a the bottom plate modified to fit on an ord bot
 module mount_ordbot(){
 	
 	xdiff = 84.972-35.028;
@@ -359,85 +360,51 @@ module pump_mount(){
 	}
 }
 
+if(print_mount_top==1){
+	mirror([0,0,1]) translate([60,0,11.5]) mirror([0,0,1]) mount_top();
+}
+if(print_mount_front==1){
+	mirror([0,0,1]) translate([0,60,-19]) rotate([90,0,0]) mount_front();		
+}
+if(print_mount_bottom==1){
+	mirror([0,0,1]) mount_bottom();
+}
+if(print_tool_gear==1){
+	mirror([0,0,1]) translate([-50,0,12]) mirror([0,0,1]) tool_gear();
+}
+if(print_pump_mount==1){	
+	mirror([0,0,1]) translate([-60,40,14]) rotate([90,0,0]) pump_mount();
+}
+if(print_stepper_gear==1){
+	mirror([0,0,1]) translate([0,-50,24]) mirror([0,0,1]) stepper_gear();
+}	
+if(print_air_hose_mount==1){
+	mirror([0,0,1]) translate([60,15,36.5]) air_hose_mount();
+}
+if(print_camera_mount==1){
+	mirror([0,0,1]) translate([-70,-40,24]) rotate([90,0,0]) camera_mount();
+}
 
-module print(){
-	mirror([0,0,1]){
-
-			translate([60,0,11.5]) mirror([0,0,1]) mount_top();
-	
-
-	
-			translate([0,60,-19]) rotate([90,0,0]) mount_front();
-				
-
-			mount_bottom();
-			
 
 
-			translate([-50,0,12]) mirror([0,0,1]) tool_gear();
-	
-			translate([-60,40,14]) rotate([90,0,0]) pump_mount();
-
-			translate([0,-50,24]) mirror([0,0,1]) stepper_gear();
-		
-
-	
-			translate([60,15,36.5]) air_hose_mount();
-
-			translate([-70,-40,24]) rotate([90,0,0]) camera_mount();
-		
+module view(){
+	translate([26,gear_offset,20]) camera_mount();
+	air_hose_mount();
+	mount_front();
+	mount_top();
+	mount_ordbot();
+	stepper_gear();
+	translate([0,gear_offset,0]){
+		tool_gear();
+		picker_needle();
 	}
 }
 
-print();
+if(show_view==1){
 
-module view(){
-
-
+	view();
 
 }
-
-//picker_needle();
-//print();
-
-//mount_ordbot();
-//mount_bottom();
-
-//mount_top();
-
-//tool_gear();
-
-
-
-//picker_needle();
-
-///pump_mount();
-
-//print();
-
-//%air_hose_mount();
-//mount_top();
-
-//mount_top();
-
-/*
-
-translate([26,gear_offset,20]) camera_mount();
-air_hose_mount();
-mount_front();
-mount_top();
-mount_ordbot();
-
-//stepper_gear();
-
-
-
-color("red") stepper_gear();
-color("green") translate([0,gear_offset,0]){
-	tool_gear();
-	picker_needle();
-}	*/
-
 
 
 
