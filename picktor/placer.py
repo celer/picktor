@@ -33,14 +33,14 @@ class Placer:
 
     t = board.board.height+tape.tapeTemplate.partHeight;
     stream.write("\n;Rotate the part\n");
-    r = pr/90;
-    stream.write("G1 E"+str(r)+" E100\n")
+    r = (pr-90)/90;
+    stream.write("G1 E"+str(r)+" F100\n")
 
 
     stream.write("\n;Put the part at "+partPlacement.reference+"\n")
-    stream.write("G1 X"+str(px)+" Y"+str(py)+" Z20\n")
-    stream.write("G1 X"+str(px)+" Y"+str(py)+" Z"+str(t)+"\n")
+    stream.write("G1 X"+str(px)+" Y"+str(py)+" Z20 F3000\n")
+    stream.write("G1 X"+str(px)+" Y"+str(py)+" Z"+str(t)+" F1000\n")
     stream.write("M42 P4 S0\n") 
-    stream.write("G4 P200\n")
+    stream.write("G4 P500\n")
     stream.write("G1 X"+str(px)+" Y"+str(py)+" Z20\n")
 

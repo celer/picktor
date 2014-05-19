@@ -54,13 +54,13 @@ class Picker:
     # Move to where we thing the part is
     stream.write("\n; Pick up the part from "+tape.name+"\n");
     stream.write("G1 E0\n")
-    stream.write("G1 X"+str(tape.origin_x+tape.currentPart*tape.tapeTemplate.partDistance)+" Y"+str(tape.origin_y)+" Z20 F1000\n")
+    stream.write("G1 X"+str(tape.origin_x+tape.currentPart*tape.tapeTemplate.partDistance)+" Y"+str(tape.origin_y)+" Z20 F3000\n")
     # Visit the parts surface
     stream.write("G1 X"+str(tape.origin_x+tape.currentPart*tape.tapeTemplate.partDistance)+" Y"+str(tape.origin_y)+" Z"+str(tape.tapeTemplate.partHeight)+" F200\n")
     # Turn on the vacuum
     stream.write("M42 P4 S255\n");
     # Dwell
-    stream.write("G4 P200\n");
+    stream.write("G4 P400\n");
     # Left the part upwards
     stream.write("G1 X"+str(tape.origin_x+tape.currentPart*tape.tapeTemplate.partDistance)+" Y"+str(tape.origin_y)+" Z20 F1000\n")
     

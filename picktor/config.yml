@@ -1,15 +1,15 @@
 boards:
     - name: "RaceLogger-RevB"
       placements: "noname-Front.pos"
-      height: 1.5
+      height: 1.0
 
 jobs:
   - name: "RaceLogger RevB"
     boards:
       - name: "RaceLogger-RevB"
         reference: "R201"
-        x: 50
-        y: 50
+        x: 19.5
+        y: 100
         second_reference: "R307"
 
     steps:
@@ -26,10 +26,10 @@ tapeTemplates:
     holeToEdge: 1
     totalHeight: 1.5
     partToEdge: 1
-    partHeight: 1
+    partHeight: 0.75
     partLength: 1
     partWidth: 1
-    partDistance: 2
+    partDistance: 4
     partRotation: 0
       
 
@@ -46,5 +46,5 @@ tapes:
     value: "100K"
     template: "SMT805_generic"
     numberOfParts: 10
-    origin_x: 5
-    origin_y: 15
+    origin_x: 19.5
+    origin_y: 31

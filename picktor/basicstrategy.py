@@ -114,6 +114,7 @@ class BasicStrategy(Strategy):
 
       #2 Setup the placer with the boards
  
+      stream.write("G28\n")
       stream.write("M302\n")
       stream.write("M92 E400\n")
  
