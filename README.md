@@ -51,17 +51,20 @@ Here is what you'll need
 ### Where to get stuff
 
   - [1] http://www.ebay.com/itm/M3-0-50-X-6MM-THRU-30MM-STAINLESS-STEEL-METRIC-SOCKET-HEAD-C-S-ASSORTMENT-/291147199149?
-  - [2] http://www.amazon.com/Bearing-Shielded-Miniature-Bearings-VXB/dp/B002BBF3JO/ref=sr_1_1?ie=UTF8&qid=1400472770&sr=8-1&keywords=623zz
+  - [2] http://www.amazon.com/Bearing-Shielded-Miniature-Bearings-VXB/dp/B002BBF3JO/ref=sr\_1\_1?ie=UTF8&qid=1400472770&sr=8-1&keywords=623zz
   - [3] http://www.ebay.com/itm/M3-0-50-X-6MM-THRU-20MM-STAINLESS-STEEL-HEX-HEAD-CAP-SCREW-BOLT-ASSORTMENT-/291140653858?
   - [4] http://www.harborfreight.com/382-piece-o-ring-assortment-67554.html
-  - [5] http://www.amazon.com/Tradespro-835798-Spring-Assortment-200-Piece/dp/B003L0LEJM/ref=sr_1_1?s=hi&ie=UTF8&qid=1400472954&sr=1-1&keywords=835798
+  - [5] http://www.amazon.com/Tradespro-835798-Spring-Assortment-200-Piece/dp/B003L0LEJM/ref=sr\_1\_1?s=hi&ie=UTF8&qid=1400472954&sr=1-1&keywords=835798
   - [6] http://www.homedepot.com/p/Watts-1-4-in-Brass-Compression-Nut-with-Insert-A-4/100638289
   - [7] http://www.ebay.com/itm/DC12V-DC-micro-vacuum-pump-Pumping-air-pump-30Kpa-Air-sampling-/191113084674?ssPageName=ADME:L:OC:US:3160
+  - [8] http://www.amazon.com/XCSOURCE%C2%AE-Waterproof-Microscope-Inspection-Borescope/dp/B00JD4Y56Y/ref=sr\_1\_sc\_1?s=industrial&ie=UTF8&qid=1400475218&sr=1-1-spell&keywords=xcsouce+microscope
 
 
 ### Optional Items
  
-  * 1 USB camera
+  * 1 USB camera [8]
+
+(This camera is kind of dissapointing ... see the video quality in the link above)
 
 For mounting to the printer
 
